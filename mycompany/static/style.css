@@ -1,12 +1,24 @@
-body{
+body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #06005f;
+    padding: 2rem;
+    line-height: 1.6;
+    background: #000000;
+    color: #eee;
 }
 
-h1{
-    font-style: italic;
-    text-align: center;
-    color: #ffffff;
+h1 {
+    color: #eee;
+}
+
+code {
+    background: #222;
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: #fff;
+}
+
+pre {
+    background: #222;
+    padding: 1rem;
+    overflow-x: auto;
 }

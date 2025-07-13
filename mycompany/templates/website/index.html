@@ -8,6 +8,57 @@
     <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
-    <h1>Hello user</h1>
+    <h1>Django Machine Test — Kaunain Shaikh</h1>
+
+  <p><strong>👋 Hello HR,</strong></p>
+  <p>This project demonstrates:</p>
+  <ul>
+    <li>User authentication using JWT</li>
+    <li>Client CRUD operations</li>
+    <li>Project creation and user assignment</li>
+    <li>Role-based permissions (Manager / Developer)</li>
+  </ul>
+
+  <h2>How to test this project:</h2>
+
+  <h3>1. Start the server</h3>
+  <pre><code>python manage.py runserver</code></pre>
+
+  <h3>2. Open Postman and import the Postman collection</h3>
+  <p>The <code>machine_test.postman_collection.json</code> file is included.  
+    It contains:</p>
+  <ul>
+    <li>Get token (JWT)</li>
+    <li>Create, update, delete client (Manager only)</li>
+    <li>Add project and assign users (Manager only)</li>
+    <li>Get projects assigned to logged-in Developer</li>
+  </ul>
+
+  <h3>3. Use credentials</h3>
+  <ul>
+    <li><strong>Manager:</strong> <code>ganesh / managerpass</code></li>
+    <li><strong>Developer:</strong> <code>rohit / developerpass</code></li>
+  </ul>
+
+  <h3>4. Test API endpoints</h3>
+  <p>All requests must use the Bearer token from the JWT login.  
+  For Manager, you can:</p>
+  <ul>
+    <li>Register a client</li>
+    <li>Fetch all clients</li>
+    <li>Update or delete a client</li>
+    <li>Add projects and assign developers</li>
+  </ul>
+  <p>Developers can:</p>
+  <ul>
+    <li>View only their assigned projects</li>
+    <li>Cannot create/edit/delete clients or projects</li>
+  </ul>
+
+  <h3>✅ Done!</h3>
+  <p>This demonstrates correct REST API usage, permissions, and JWT auth.</p>
+
+  <p><strong>Thanks & Regards,</strong><br/>
+  Kaunain Shaikh</p>
 </body>
 </html>
